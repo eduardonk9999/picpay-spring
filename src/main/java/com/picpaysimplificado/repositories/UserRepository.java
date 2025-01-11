@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    Optional<User> findUserByDocument(Long document); //Busca user pelo documento
+    Optional<User> findUserByDocument(String document); //Busca user pelo documento
     Optional<User> findUserById(Long id);
 
 
